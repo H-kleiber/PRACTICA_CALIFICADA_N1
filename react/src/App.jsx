@@ -10,6 +10,7 @@ function App() {
         const response = await fetch('http://localhost:3000/api/clientes');
         const data = await response.json();
         setClientes(data);
+        console.log(data);
       } catch (error) {
         console.error('Error al obtener clientes:', error);
       }
